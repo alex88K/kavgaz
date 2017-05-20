@@ -17,7 +17,7 @@
       		</li>
             <li class="slider-item">
                <div class="container">
-                  <div class="slider-info reveal-right">
+                  <div class="slider-info">
                      <h2 class="slider-title">Розничная доставка 2</h2>
                      <div class="slider-subtitle">промышленное и гражданское строительство, предоставление в аренду емкостей для хранения и аренда бензовоза. Имеем собственную мобильную АЗС.</div>
                      <a href="inner.php" class="btn">Подробнее</a>
