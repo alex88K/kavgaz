@@ -1601,6 +1601,10 @@ input:hover + label .fa {
   .projects .aside-right {
     padding-left: 30px;
   }
+
+  .advantage-item:after {
+    display: none;
+  }
 }
 @media screen and (max-width: 768px) {
   .promo-slider .slider-item .slider-img {
