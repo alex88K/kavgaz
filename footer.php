@@ -8,8 +8,8 @@
                <ul class="nav navbar-nav">
                   <li class="nav-item"><a href="/">Главная</a></li>
                   <li class="nav-item"><a href="inner.php">Продукция</a></li>
-                  <li class="nav-item" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                     <a href="inner.php">Услуги<span class="caret"></a>
+                  <li class="nav-item" class="dropdown">
+                     <a href="inner.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Услуги<span class="caret"></a>
                      <ul class="dropdown-menu">
                         <li class="nav-item"><a href="inner.php">Преимущества</a></li>
                         <li class="nav-item"><a href="inner.php">Услуга 2</a></li>
@@ -33,7 +33,7 @@
             <div class="f-col">
                <div class="f-title">Контакты</div>
                <div class="f-text">
-                  <ul class="f-list">
+                  <ul class="f-list contact-b">
                      <li><span><i class="fa fa-map-marker" aria-hidden="true"></i> Москва, ул. Пушкина 34/1</span></li>
                      <li><a href="tel:+78552910105"><i class="fa fa-phone" aria-hidden="true"></i> +7 (8552) 91-01-05</a></li>
                      <li><a href="mailto:info@mail.com"><i class="fa fa-envelope" aria-hidden="true"></i> info@mail.com</a></li>
@@ -50,7 +50,7 @@
                </ul>
             </div>
             <div class="f-col soc ">
-               <h3>Мы в соц. сетях</h3>
+               <div class="f-title">Мы в соц. сетях</div>
                <div class="f-text">
                   <div class="soc-links">
                      <a href="/fb" class="soc-link"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -58,7 +58,7 @@
                      <a href="/odnoklassniki" class="soc-link"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a>
                      <a href="/instagram" class="soc-link"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                   </div>
-                  <a href="/" class="btn">Заказать звонок</a>
+                  <a href="/" class="btn btn-l">Заказать звонок</a>
                </div>
             </div>
          </div>
@@ -85,9 +85,5 @@
 <script src="http://cdn.jsdelivr.net/scrollreveal.js/3.1.1/scrollreveal.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
 <script src="js/main.js"></script>
-<!--[if lt IE 9]>
-<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-<![endif]-->
 </body>
 </html>

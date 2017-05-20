@@ -1,5 +1,4 @@
 $(function() {
-	$(function() {
 /*--Main nav-----------------------------------*/ 
 
 	$('.navbar-toggle').jPushMenu({ closeOnClickLink: false });
@@ -9,8 +8,30 @@ $(function() {
 	
 	$('.promo-slider .owl-carousel').owlCarousel({
 		items: 1,
-		nav: false,
-		loop: true 
+		nav: true,
+		loop: true,
+		dots: false,
+		navText: ''
+	});
+
+	$('.client-slider .owl-carousel').owlCarousel({
+		items: 7,
+		nav: true,
+		loop: true,
+		dots: false,
+		navText: '',
+		responsive: {
+			768: {
+				items: 7
+			},
+			506: {
+				items: 4
+			},
+			0: {
+				items: 2
+			}
+		}
+
 	});
 
 /*--Animation-------------------*/
