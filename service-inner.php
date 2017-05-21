@@ -54,5 +54,24 @@
             </div>
          </article>
       </div>
+      <div class="contact-f">
+         <div class="container reveal-anim">
+            <div class="section-header">
+               <h2 class="section-title">Связаться с нами</h2>
+            </div>
+            <form action="#" class="contact-form">
+               <div class="form-group">
+                  <input type="text" class="form-control" name="uname" placeholder="Ваше имя">
+                  <label><i class="icons man-i"><svg viewbox="0 0 18 16"><use xlink:href="#man"></svg></i></label>
+               </div>
+               <div class="form-group">
+                  <input type="text" class="form-control" name="phone" placeholder="Ваш телефон">
+                  <label><i class="fa fa-phone" aria-hidden="true"></i></label>
+               </div>
+               <div class="form-group submit-wrap"><input type="submit" name="submit" class="btn btn-blue btn-submit" value="Связаться"></div>
+               <div class="protected"><i class="icons lock-i"><svg viewbox="0 0 13 17"><use xlink:href="#lock"></svg></i>Ваши контактные данные в безопасности и не будут переданы третьим лицам</div>
+            </form>
+         </div>
+      </div>
    </main>
    <?php include "footer.php" ?>
