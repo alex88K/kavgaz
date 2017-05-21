@@ -58,7 +58,7 @@
                      <a href="/odnoklassniki" class="soc-link"><i class="fa fa-odnoklassniki" aria-hidden="true"></i></a>
                      <a href="/instagram" class="soc-link"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                   </div>
-                  <a href="/" class="btn btn-l">Заказать звонок</a>
+                  <button type="button" class="btn btn-l btn-callback" data-toggle="modal"  data-target="#modal-callback">Заказать звонок</button>
                </div>
             </div>
          </div>
@@ -77,6 +77,8 @@
       </div>
    </footer>
 </div>
+<?php include "modal.php" ?>
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css">
 <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>

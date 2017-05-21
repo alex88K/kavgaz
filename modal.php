@@ -1,38 +1,26 @@
-<div id="modal-callback" class="mfp-hide">
-	<div class="modal-callback-wrap">
-		<form id="sendmail">
-			<div class="form-title">Заказать звонок</div>
-			<div class="form-group">
-				<input type="text" name="name" class="form-field" maxlength="50" placeholder="Ваше имя" required>
-				<input type="email" name="email" class="form-field" placeholder="Электронный адрес">
-				<input type="tel" name="phone" class="form-field" maxlength="12" placeholder="Номер телефона" required>
-				<input type="submit" class="btn btn-l" value="Отправить">
-			</div>
-		</form>
+<div id="modal-callback" class="modal fade" tab-index="-1" role="dialog" aria-labelledby="callback">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content modal-callback-wrap">
+			<form action="#" class="contact-form">
+					<div class="form-title">Заказать обратный звонок</div>
+               <div class="form-group">
+                  <input type="text" class="form-control" name="uname" placeholder="Ваше имя">
+                  <label><i class="icons man-i"><svg viewbox="0 0 18 16"><use xlink:href="#man"></svg></i></label>
+               </div>
+               <div class="form-group">
+                  <input type="text" class="form-control" name="phone" placeholder="Ваш телефон">
+                  <label><i class="fa fa-phone" aria-hidden="true"></i></label>
+               </div>
+               <div class="form-group submit-wrap"><input type="submit" name="submit" class="btn btn-blue btn-submit" value="Связаться"></div>
+               <div class="protected"><i class="icons lock-i"><svg viewbox="0 0 13 17"><use xlink:href="#lock"></svg></i>Ваши контактные данные в безопасности и не будут переданы третьим лицам</div>
+         </form>
+		</div>
+      <button class="close" data-dismiss="modal">x</button>
 	</div>
 </div>
-<div id="modal-askq" class="mfp-hide">
-	<div class="modal-askq-wrap">
-		<form id="sendmail">
-			<div class="form-title">Задайте вопрос</div>
-			<div class="form-group">
-				<input type="text" name="name" class="form-field" maxlength="50" placeholder="Ваше имя" required>
-				<input type="email" name="email" class="form-field" placeholder="Электронный адрес">
-				<input type="tel" name="phone" class="form-field" maxlength="12" placeholder="Номер телефона" required>
-				<textarea name="question" id="f-question" cols="" rows="5" placeholder="Задайте Ваш вопрос"></textarea>
-				<input type="submit" class="btn btn-l" value="Отправить">
-			</div>
-		</form>
-	</div>
-</div>
-<div id="modal-mes" class="mfp-hide">
+<div id="modal-mes" class="modal fade" tab-index="-1" role="dialog" aria-labelledby="success message">
 	<div class="mes-title">Спасибо</div>
 	<div class="mes-text">Заявка отправлена!<br/>Мы свяжемся с Вами в ближайшее время.</div>
-	<button class="btn btn-l return-site">Вернуться на сайт</button>
-</div>
-<div id="modal-error" class="mfp-hide">
-	<div class="mes-title">Ошибка</div>
-	<div class="mes-text">Сообщение не отправлено. Попробуйте позже</div>
-	<button class="btn btn-l return-site">Вернуться на сайт</button>
+	<button class="btn return-site">Вернуться на сайт</button>
 </div>
 

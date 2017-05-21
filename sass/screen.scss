@@ -853,6 +853,72 @@ input:hover + label .fa, {
 	}
 }
 
+.modal {
+	.contact-form {
+		width: 355px;
+		margin: 30px auto 45px auto;
+		padding-left: 0;
+		.form-group { 
+			float: none;
+			display: block;
+			margin: 0 auto 15px auto;
+			input { width: 100%; }
+		}
+		.submit-wrap { margin-top: 1.5em; }
+	}
+	.close {
+		position: absolute;
+		top: 15px;
+		right: 15px;
+		width: 25px;
+		height: 25px;
+		color: #000;
+		text-indent: -9999px;
+		opacity: .6;
+		&:hover { opacity: 1; }
+		&:after {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 0;
+			width: 25px;
+			height: 2px;
+			background-color: #000;
+			-webkit-transform: rotate(45deg);
+			-ms-transform: rotate(45deg);
+			-o-transform: rotate(45deg);
+			transform: rotate(45deg);
+		}
+		&:before {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 0;
+			width: 25px;
+			height: 2px;
+			background-color: #000;
+			-webkit-transform: rotate(-45deg);
+			-ms-transform: rotate(-45deg);
+			-o-transform: rotate(-45deg);
+			transform: rotate(-45deg);
+		}
+	}
+}
+
+.modal-content {
+	background: #f4f4f4 url(../images/flame.png) no-repeat;
+	background-position: 10% 10px;
+}
+
+.form-title {
+	margin: 0.4em 0 1em 0;
+	text-align: center;
+	font-size: 160%;
+	font-weight: 600;
+	color: #1e1e1e;
+	line-height: 1.2;
+}
+
 .submit-wrap {
 	float: none;
 	.btn-submit { margin: 0; }
@@ -1485,11 +1551,6 @@ input:hover + label .fa, {
 	}
 /*--END Menu------------------------------*/
 
-	.contact-form .form-group {
-		float: none;
-		margin-right: 0;
-	}
-
 	.contact-form input, 
 	.contact-form textarea,
 	.contact-form textarea.form-control { width: 100% !important; }
@@ -1499,7 +1560,15 @@ input:hover + label .fa, {
 		.btn { margin-top: 1.2em; }
 	}
 
-	.contact-form { padding: 0 15%; }
+	.contact-form { 
+		padding: 0 15%; 
+		.form-group {
+			float: none;
+			margin-right: 0;
+		}
+	}
+
+	.modal .contact-form { padding: 0; }
 
 	.promo-slider {
 		.slider-item {
@@ -1636,4 +1705,8 @@ input:hover + label .fa, {
 	.logo-b { display: none; }
 	.logo-m { display: block; }
 	.header { padding-top: 0; }
+}
+
+@media screen and (max-width: 560px) {
+	.modal .contact-form { padding: 0 50px; }
 }

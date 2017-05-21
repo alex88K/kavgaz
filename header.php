@@ -24,7 +24,7 @@
 				<a href="tel:+78552910105"><i class="fa fa-phone" aria-hidden="true"></i>+7(8552)91-01-05</a>
 				<a href="mailto:info@mail.com"><i class="fa fa-envelope" aria-hidden="true"></i>info@mail.com</a>
 			</div>
-			<a class="btn btn-callback" href="#modal-callback">Заказать звонок</a>
+			<button type="button" class="btn btn-callback" data-toggle="modal"  data-target="#modal-callback">Заказать звонок</button>
 		</div>
    </div>
    <nav class="navbar">
