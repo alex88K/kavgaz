@@ -139,27 +139,27 @@ h6 {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 187%;
 }
 
 h2 {
-  font-size: 28px;
+  font-size: 175%;
 }
 
 h3 {
-  font-size: 26px;
+  font-size: 162%;
 }
 
 h4 {
-  font-size: 20px;
+  font-size: 125%;
 }
 
 h5 {
-  font-style: 18px;
+  font-style: 112%;
 }
 
 h6 {
-  font-size: 16px;
+  font-size: 100%;
 }
 
 h1,
@@ -175,7 +175,7 @@ h1 {
 p {
   margin-bottom: 1.2em;
   line-height: 1.54;
-  font-size: 13px;
+  font-size: 81.25%;
   color: #1e1e1e;
 }
 
@@ -514,7 +514,7 @@ input:hover + label .fa {
   position: relative;
   padding: 12px 20px 10px 20px;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 87.5%;
   color: #1e1e1e;
   text-transform: uppercase;
 }
@@ -802,7 +802,7 @@ input:hover + label .fa {
 .section-sub {
   width: 70%;
   margin: 1em auto 0 auto;
-  font-size: 13px;
+  font-size: 81%;
   color: #8a8a8a;
 }
 
@@ -906,7 +906,7 @@ input:hover + label .fa {
 .projects .section-desc a {
   display: block;
   margin-bottom: 15px;
-  font-size: 20px;
+  font-size: 125%;
   font-weight: 600;
 }
 .about .section-desc .btn,
@@ -951,6 +951,9 @@ input:hover + label .fa {
 .project-item:last-child {
   margin-bottom: 20px;
 }
+.project-item a {
+  font-size: 100% !important;
+}
 
 .project-img {
   float: left;
@@ -960,7 +963,7 @@ input:hover + label .fa {
 
 .project-intro {
   margin-left: 150px;
-  font-size: 65%;
+  font-size: 82%;
   color: #2c2c2c;
   font-weight: normal;
 }
@@ -989,7 +992,7 @@ input:hover + label .fa {
 }
 .contact-form .protected {
   display: block;
-  font-size: 13px;
+  font-size: 81%;
   font-style: italic;
   color: #060606;
   clear: both;
@@ -1306,7 +1309,7 @@ input:hover + label .fa {
 
 .f-title {
   margin-bottom: 35px;
-  font-size: 18px;
+  font-size: 112%;
   font-weight: 600;
   color: #1e1e1e;
   text-transform: uppercase;
@@ -1404,7 +1407,6 @@ input:hover + label .fa {
 .content {
   padding-bottom: 40px;
   font-family: "Open Sans";
-  font-size: 87%;
   color: #1e1e1e;
 }
 

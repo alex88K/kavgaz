@@ -65,12 +65,12 @@ h6 {
 	font-family: $pr, Helvetica, Arial, sans-serif;
 }
 
-h1 { font-size: 30px; }
-h2 { font-size: 28px; }
-h3 { font-size: 26px; }
-h4 { font-size: 20px; }
-h5 { font-style: 18px; }
-h6 { font-size: 16px; }
+h1 { font-size: 187%; }
+h2 { font-size: 175%; }
+h3 { font-size: 162%; }
+h4 { font-size: 125%; }
+h5 { font-style: 112%; }
+h6 { font-size: 100%; }
 
 h1,
 h2 { 
@@ -83,7 +83,7 @@ h1 { margin-bottom: .6em; }
 p { 
 	margin-bottom: 1.2em; 
 	line-height: 1.54;
-	font-size: 13px;
+	font-size: 81.25%;
 	color: #1e1e1e;
 }
 
@@ -385,7 +385,7 @@ input:hover + label .fa, {
 			position: relative;
 			padding: 12px 20px 10px 20px;
 			font-weight: 600;
-			font-size: 14px;
+			font-size: 87.5%;
 			color: #1e1e1e;
 			text-transform: uppercase;
 			&:before {
@@ -677,7 +677,7 @@ input:hover + label .fa, {
 .section-sub {
 	width: 70%;
 	margin: 1em auto 0 auto;
-	font-size: 13px; 
+	font-size: 81%; 
 	color: #8a8a8a; 
 }
 
@@ -765,7 +765,7 @@ input:hover + label .fa, {
 		a {
 			display: block;
 			margin-bottom: 15px;
-			font-size: 20px;
+			font-size: 125%;
 			font-weight: 600;
 		}
 		.btn { 
@@ -806,6 +806,7 @@ input:hover + label .fa, {
 	padding: 0;
 	&:before { display: none; }
 	&:last-child { margin-bottom: 20px; }
+	a { font-size: 100% !important; }
 	@extend .cf;
 }
 
@@ -817,7 +818,7 @@ input:hover + label .fa, {
 
 .project-intro {
 	margin-left: 150px;
-	font-size: 65%;
+	font-size: 82%;
 	color: #2c2c2c;
 	font-weight: normal;
 }
@@ -842,7 +843,7 @@ input:hover + label .fa, {
 	}
 	.protected {
 		display: block;
-		font-size: 13px;
+		font-size: 81%;
 		font-style: italic;
 		color: #060606;
 		clear: both;
@@ -1129,7 +1130,7 @@ input:hover + label .fa, {
 
 .f-title {
 	margin-bottom: 35px;
-	font-size: 18px;
+	font-size: 112%;
 	font-weight: 600;
 	color: #1e1e1e;
 	text-transform: uppercase;
@@ -1222,7 +1223,6 @@ input:hover + label .fa, {
 .content {
 	padding-bottom: 40px;
 	font-family: $pr;
-	font-size: 87%;
 	color: #1e1e1e;
 }
 
