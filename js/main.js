@@ -11,7 +11,8 @@ $(function() {
 		nav: true,
 		loop: true,
 		dots: false,
-		navText: ''
+		navText: '',
+		smartSpeed: 600
 	});
 
 	$('.client-slider .owl-carousel').owlCarousel({
@@ -31,8 +32,50 @@ $(function() {
 				items: 2
 			}
 		}
-
 	});
+
+/*--slider with thumbs------------------*/
+
+	var slider = $('#slider');
+  	var thumbnailSlider = $('#thumbnailSlider');
+  	var duration = 500;
+
+	slider.owlCarousel({
+		loop: false,
+		nav: false,
+		items: 1,
+		dots: false
+	}).on('changed.owl.carousel', function (e) {
+		thumbnailSlider.trigger('to.owl.carousel', [e.item.index, duration, true]);
+	});
+
+	thumbnailSlider.owlCarousel({
+		loop: false,
+  		nav: false,
+  		margin: 18,
+   	responsive: {
+	    	0: {
+	     		items: 3
+	    	},
+	    	600: {
+	     		items: 4
+	    	},
+			1000: {
+				items: 4
+			}
+   	}
+  	}).on('click', '.owl-item', function () {
+   	slider.trigger('to.owl.carousel', [$(this).index(), duration, true]);
+  	}).on('changed.owl.carousel', function (e) {
+   	slider.trigger('to.owl.carousel', [e.item.index, duration, true]);
+	});
+
+  	$('.slider-right').click(function() {
+		slider.trigger('next.owl.carousel');
+  	});
+  	$('.slider-left').click(function() {
+		slider.trigger('prev.owl.carousel');
+  	});
 
 /*--Animation-------------------*/
 

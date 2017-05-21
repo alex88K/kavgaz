@@ -16,13 +16,13 @@
 <header class="header">
 	<div class="container">
 		<div class="pull-left">
-			<a href="index.php" class="brand-logo"><img src="images/logo.png" widht="176" height="142" alt="КАВГАЗ — группа компаний"></a>
+			<a href="index.php" class="brand-logo"><img src="images/logo.png" class="logo-b" widht="176" height="142" alt="КАВГАЗ — группа компаний">
+			<img src="images/logo-m.svg" class="logo-m" alt="КАВГАЗ — группа компаний"></a>
 		</div>
 		<div class="pull-right">
 			<div class="contact-b">
 				<a href="tel:+78552910105"><i class="fa fa-phone" aria-hidden="true"></i>+7(8552)91-01-05</a>
 				<a href="mailto:info@mail.com"><i class="fa fa-envelope" aria-hidden="true"></i>info@mail.com</a>
-				
 			</div>
 			<a class="btn btn-callback" href="#modal-callback">Заказать звонок</a>
 		</div>
@@ -35,14 +35,14 @@
    		<div class="main-menu collapse navbar-collapse cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="navbar">
 		   	<ul class="nav navbar-nav">
 			   	<li class="nav-item active"><a href="/">Главная</a><i></i></li>
-					<li class="nav-item"><a href="inner.php">Продукция</a><i></i></li>
+					<li class="nav-item"><a href="services-inner.php">Продукция</a><i></i></li>
 					<li class="nav-item" class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Услуги<span class="caret"></a>
 						<ul class="dropdown-menu">
-			   			<li class="nav-item"><a href="inner.php">Преимущества</a></li>
-			   			<li class="nav-item"><a href="inner.php">Услуга 2</a></li>
-			   			<li class="nav-item"><a href="inner.php">Очень длинное название услуги</a></li>
-			   			<li class="nav-item"><a href="inner.php">Услуга 4</a></li>
+			   			<li class="nav-item"><a href="service-inner.php">Преимущества</a></li>
+			   			<li class="nav-item"><a href="service-inner.php">Услуга 2</a></li>
+			   			<li class="nav-item"><a href="service-inner.php">Очень длинное название услуги</a></li>
+			   			<li class="nav-item"><a href="service-inner.php">Услуга 4</a></li>
 			   		</ul>
 					</li>
 					<li class="nav-item"><a href="inner.php">Доставка</a><i></i></li>

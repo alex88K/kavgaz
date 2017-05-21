@@ -84,6 +84,7 @@
 <script src="https://use.fontawesome.com/5182c6e064.js"></script>
 <script src="http://cdn.jsdelivr.net/scrollreveal.js/3.1.1/scrollreveal.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.min.js"></script>
+<script src="js/owl.carousel2.thumbs.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
