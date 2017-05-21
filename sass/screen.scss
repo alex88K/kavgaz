@@ -342,7 +342,8 @@ input:hover + label .fa, {
 			}
 			.fa-phone { 
 				position: relative;
-				top: 2px;
+				top: 1px;
+				left: -1px;
 				font-size: 125%; 
 			}
 		}
@@ -860,7 +861,7 @@ input:hover + label .fa, {
 /*---client-----------------------*/
 
 .clients {
-	padding-bottom: 1.4%;
+	padding-bottom: 40px;
 	.section-header { padding-top: 60px; }
 	.section-title { color: #060606; }
 }
@@ -868,7 +869,7 @@ input:hover + label .fa, {
 .client-slider {
 	margin-top: 35px;
 	.slider-item {
-		height: 90px;
+		height: 100px;
 		img { 
 			width: auto !important; 
 			margin: 0 auto;
@@ -878,7 +879,7 @@ input:hover + label .fa, {
 			position: absolute;
 			top: 50%; right: 0;
 			width: 1px; height: 60px;
-			margin-top: -35px;
+			margin-top: -38px;
 			background-color: #d2d2d2;
 		}
 	}
@@ -953,9 +954,9 @@ input:hover + label .fa, {
 			color: #0087ff;
 			text-align: center;
 		}
-		.fa-map-marker { top: 2px; }
+		.fa-map-marker { top: 2px; left: 1px; }
 		.fa-phone { top: 2px; }
-		.fa-envelope { top: 2px; }
+		.fa-envelope { top: 2px; left: 1px; }
 	}
 }
 
@@ -1319,6 +1320,7 @@ input:hover + label .fa, {
 	position: relative;
 	width: 100%;
 	height: 485px;
+	margin-bottom: 1.2em;
 	overflow: hidden;
 	.owl-carousel { 
 		margin-bottom: 20px; 
@@ -1356,9 +1358,6 @@ input:hover + label .fa, {
 		}
 	}
 }
-
-
-
 
 
 /*--MEDIA QUERIES---------------------------------------*/
@@ -1587,7 +1586,7 @@ input:hover + label .fa, {
 	.advantage-item:after { display: none; }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 	.promo-slider {
 		.slider-item {
 			.slider-img { display: none; }
@@ -1609,9 +1608,17 @@ input:hover + label .fa, {
 
 	.about .section-header, 
 	.projects .section-header { padding-top: 6%; }
+
+	.advantage .section-header { padding: 10% 0 8% 0; }
+
+	.contact-f .section-header,
+	.clients .section-header,
+	.contact-section .section-header { padding: 8% 0 7% 0; }
+
+	.f-title { margin-bottom: 4%; }
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 679px) {
 	.promo-slider .owl-nav .owl-next, 
 	.promo-slider .owl-nav .owl-prev {
 		padding: 10px 10px 12px 10px !important;

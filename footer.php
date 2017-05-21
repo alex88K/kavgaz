@@ -7,14 +7,14 @@
             <div class="main-menu collapse navbar-collapse cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="f-navbar">
                <ul class="nav navbar-nav">
                   <li class="nav-item"><a href="/">Главная</a></li>
-                  <li class="nav-item"><a href="inner.php">Продукция</a></li>
+                  <li class="nav-item"><a href="services-inner.php">Продукция</a></li>
                   <li class="nav-item" class="dropdown">
                      <a href="inner.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Услуги<span class="caret"></a>
                      <ul class="dropdown-menu">
-                        <li class="nav-item"><a href="inner.php">Преимущества</a></li>
-                        <li class="nav-item"><a href="inner.php">Услуга 2</a></li>
-                        <li class="nav-item"><a href="inner.php">Очень длинное название услуги</a></li>
-                        <li class="nav-item"><a href="inner.php">Услуга 4</a></li>
+                        <li class="nav-item"><a href="service-inner.php">Преимущества</a></li>
+                        <li class="nav-item"><a href="service-inner.php">Услуга 2</a></li>
+                        <li class="nav-item"><a href="service-inner.php">Очень длинное название услуги</a></li>
+                        <li class="nav-item"><a href="service-inner.php">Услуга 4</a></li>
                      </ul>
                   </li>
                   <li class="nav-item"><a href="inner.php">Доставка</a></li>
