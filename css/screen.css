@@ -855,13 +855,13 @@ input:hover + label .fa {
   border: 1px solid #656565;
 }
 .advantage-i.price {
-  background: url(../images/adv-1.png) no-repeat center center;
+  background: url(../images/advantage-1.png) no-repeat center center;
 }
 .advantage-i.quality {
-  background: url(../images/adv-2.png) no-repeat center center;
+  background: url(../images/advantage-2.png) no-repeat center center;
 }
 .advantage-i.tanker {
-  background: url(../images/adv-3.png) no-repeat center center;
+  background: url(../images/advantage-3.png) no-repeat center center;
 }
 
 .advantage-title {
