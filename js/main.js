@@ -77,6 +77,16 @@ $(function() {
 		slider.trigger('prev.owl.carousel');
   	});
 
+/*--AJAX Form submit--------------------*/
+
+	$(document).on('af_complete', function(event,response) {
+		var form_id = response.form.parents('.modal').attr('id');
+		if (response.success) {
+			$('#'+form_id).modal('hide');
+			$('#modal-mes').modal('show');
+		}
+	});
+
 /*--Animation-------------------*/
 
 	window.sr = ScrollReveal();

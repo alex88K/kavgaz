@@ -36,10 +36,10 @@
 		   	<ul class="nav navbar-nav">
 			   	<li class="nav-item active"><a href="/">Главная</a><i></i></li>
 					<li class="nav-item"><a href="services-inner.php">Продукция</a><i></i></li>
-					<li class="nav-item" class="dropdown">
+					<li class="nav-item dropdown open">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Услуги<span class="caret"></a>
 						<ul class="dropdown-menu">
-			   			<li class="nav-item"><a href="service-inner.php">Преимущества</a></li>
+			   			<li class="nav-item active"><a href="service-inner.php">Преимущества</a></li>
 			   			<li class="nav-item"><a href="service-inner.php">Услуга 2</a></li>
 			   			<li class="nav-item"><a href="service-inner.php">Очень длинное название услуги</a></li>
 			   			<li class="nav-item"><a href="service-inner.php">Услуга 4</a></li>

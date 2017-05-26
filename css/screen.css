@@ -579,8 +579,13 @@ input:hover + label .fa {
 }
 
 .nav .dropdown.open, .nav .dropdown.open > a, .nav .dropdown.open > a:hover {
-  color: #fff;
+  color: #1e1e1e;
   background: transparent;
+}
+.nav .open > a,
+.nav .open > a:focus,
+.nav .open > a:hover {
+  background-color: transparent;
 }
 
 .caret {
@@ -593,14 +598,22 @@ input:hover + label .fa {
   border: none;
   border-radius: 0;
 }
-.dropdown-menu li a {
+.dropdown-menu .nav-item a {
   padding: 14px 15px;
 }
-.dropdown-menu li a:before {
-  top: 100% !important;
+.dropdown-menu .nav-item a:before {
+  display: none;
 }
-.dropdown-menu li a:hover:before {
-  top: 100%;
+.dropdown-menu .nav-item a:hover, .dropdown-menu .nav-item a:active, .dropdown-menu .nav-item a:focus {
+  color: #fff;
+  background-color: #1e597d;
+  border: none;
+}
+.dropdown-menu .nav-item a:hover:before, .dropdown-menu .nav-item a:active:before, .dropdown-menu .nav-item a:focus:before {
+  display: none;
+}
+.dropdown-menu .nav-item.active a {
+  color: #fff;
 }
 
 .navbar-toggle {
@@ -1061,10 +1074,19 @@ input:hover + label .fa {
 .modal-content {
   background: #f4f4f4 url(../images/flame.png) no-repeat;
   background-position: 10% 10px;
+  text-align: center;
+}
+
+.modal-body {
+  padding: 30px 25px;
+}
+
+.mess-body {
+  margin-bottom: 1em;
 }
 
 .form-title {
-  margin: 0.4em 0 1em 0;
+  margin: 1.4em 0 0 0;
   text-align: center;
   font-size: 160%;
   font-weight: 600;
@@ -1639,7 +1661,6 @@ input:hover + label .fa {
     float: none;
     margin: 0;
     padding: 11px 25px;
-    color: #000;
     font-size: 100%;
     text-transform: inherit;
     border-bottom: 1px solid #e2e2e2;
