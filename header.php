@@ -38,6 +38,7 @@
 					<li class="nav-item"><a href="services-inner.php">Продукция</a><i></i></li>
 					<li class="nav-item dropdown">
 						<a href="services.php" aria-haspopup="true" aria-expanded="false">Услуги<span class="caret"></span><label class="drop-icon" for="sm0">▾</label></a>
+						<i></i>
 						<input type="checkbox" name="sm0" id="sm0">
 						<ul class="dropdown-menu">
 			   			<li class="nav-item active"><a href="service-inner.php">Преимущества</a></li>
