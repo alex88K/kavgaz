@@ -36,8 +36,9 @@
 		   	<ul class="nav navbar-nav">
 			   	<li class="nav-item active"><a href="/">Главная</a><i></i></li>
 					<li class="nav-item"><a href="services-inner.php">Продукция</a><i></i></li>
-					<li class="nav-item dropdown open">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Услуги<span class="caret"></a>
+					<li class="nav-item dropdown">
+						<a href="services.php" aria-haspopup="true" aria-expanded="false">Услуги<span class="caret"></span><label class="drop-icon" for="sm0">▾</label></a>
+						<input type="checkbox" name="sm0" id="sm0">
 						<ul class="dropdown-menu">
 			   			<li class="nav-item active"><a href="service-inner.php">Преимущества</a></li>
 			   			<li class="nav-item"><a href="service-inner.php">Услуга 2</a></li>

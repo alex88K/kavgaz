@@ -4,6 +4,10 @@ $(function() {
 	$('.navbar-toggle').jPushMenu({ closeOnClickLink: false });
 	$('.dropdown-toggle').dropdown();
 
+	$('.footer .navbar-toggle').on('click', function() {
+		$('.header .navbar-toggle').click();
+	});
+
 /*--------------------------------------------------*/ 
 	
 	$('.promo-slider .owl-carousel').owlCarousel({
@@ -22,15 +26,9 @@ $(function() {
 		dots: false,
 		navText: '',
 		responsive: {
-			768: {
-				items: 7
-			},
-			506: {
-				items: 4
-			},
-			0: {
-				items: 2
-			}
+			768: { items: 7 },
+			506: { items: 4 },
+			0: { items: 2	}
 		}
 	});
 
@@ -54,15 +52,9 @@ $(function() {
   		nav: false,
   		margin: 18,
    	responsive: {
-	    	0: {
-	     		items: 3
-	    	},
-	    	600: {
-	     		items: 4
-	    	},
-			1000: {
-				items: 4
-			}
+	    	0: { items: 3 },
+	    	600: { items: 4 },
+			1000: { items: 4 }
    	}
   	}).on('click', '.owl-item', function () {
    	slider.trigger('to.owl.carousel', [$(this).index(), duration, true]);
@@ -112,37 +104,38 @@ $(function() {
 	$.fn.jPushMenu = function(customOptions) {
 		var o = $.extend({}, $.fn.jPushMenu.defaultOptions, customOptions);
 		/* add class to the body.*/
+		var that = $('.header .navbar-toggle');
 		
 		$('body').addClass(o.bodyClass);
-		$(this).addClass('jPushMenuBtn');
-		$(this).click(function() {
+		that.addClass('jPushMenuBtn');
+		that.click(function() {
 			var target         = '',
 			push_direction     = '';
 			
-			if($(this).is('.'+o.showLeftClass)) {
+			if(that.is('.'+o.showLeftClass)) {
 				target         = '.cbp-spmenu-left';
 				push_direction = 'toright';
 			}
-			else if($(this).is('.'+o.showRightClass)) {
+			else if(that.is('.'+o.showRightClass)) {
 				target         = '.cbp-spmenu-right';
 				push_direction = 'toleft';
 			}
-			else if($(this).is('.'+o.showTopClass)) {
+			else if(that.is('.'+o.showTopClass)) {
 				target         = '.cbp-spmenu-top';
 			}
-			else if($(this).is('.'+o.showBottomClass)) {
+			else if(that.is('.'+o.showBottomClass)) {
 				target         = '.cbp-spmenu-bottom';
 			}
 			
-			$(this).toggleClass(o.activeClass);
+			that.toggleClass(o.activeClass);
 			$(target).toggleClass(o.menuOpenClass);
 			
-			if($(this).is('.'+o.pushBodyClass)) {
+			if(that.is('.'+o.pushBodyClass)) {
 				$('body').toggleClass( 'cbp-spmenu-push-'+push_direction );
 			}
 			
 			/* disable all other button*/
-			$('.jPushMenuBtn').not($(this)).toggleClass('disabled');
+			$('.jPushMenuBtn').not(that).toggleClass('disabled');
 			
 			return false;
 		});

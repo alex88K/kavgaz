@@ -450,6 +450,7 @@ input:hover + label .fa, {
 .main-menu { border-top: 1px solid #ccc; }
 
 .nav {
+	margin: 0;
 	.dropdown {
 		&.open,
 		&.open > a,
@@ -457,10 +458,30 @@ input:hover + label .fa, {
 			color: #1e1e1e;
 			background: transparent;
 		}
+		&:hover .dropdown-menu { display: block; }
+		& > input,
+		.drop-icon { display: none; }
 	}
 	.open > a,
 	.open > a:focus,
 	.open > a:hover { background-color: transparent; }
+}
+
+.drop-icon {
+	z-index: 100;
+	position: absolute;
+  	right: 0;
+  	top: 0;
+  	height: 100%;
+	padding: 0 1em;
+	font-size: 1em;
+	line-height: 40px;
+	text-align: center;
+	background-color: rgba(0, 0, 0, .125);
+	color: rgba(255, 255, 255, .75);
+	cursor: pointer;
+	&:hover,
+	&:focus { color: red; }
 }
 
 .caret { margin-left: 8px; }
@@ -1061,31 +1082,10 @@ input:hover + label .fa, {
 		.nav-item {
 			&:before { content: ''; }
 			a {
-				padding: 12px 20px 18px 20px;
 				&:before {
 					content: '';
 					position: absolute;
 					top: 100%;
-					left: 20px;
-					width: 0;
-					height: 2px;
-					background-color: transparent;
-					-webkit-transition: all .5s ease;
-					-o-transition: all .5s ease;
-					transition: all .5s ease;
-				}
-				&:hover:before,
-				&:focus:before {
-					content: '';
-					position: absolute;
-					left: 20px;
-					width: calc(100% - 40px);
-					background-color: #1e597d;
-				}
-				&:hover,
-				&:focus {
-					color: #1e1e1e;
-					background: transparent;
 				}
 			}
 			&.active a:before {
@@ -1094,27 +1094,6 @@ input:hover + label .fa, {
 				left: 20px;
 				width: calc(100% - 40px);
 				background-color: #1e597d;
-			}
-			& > i {
-				position: absolute;
-				top: 50%;
-				right: 0;
-				width: 1px;
-				height: 9px;
-				margin-top: -4px;
-				border: 1px solid #045972;
-				border-left: none;
-				border-right: none;
-				&:after {
-					content: '';
-					position: absolute;
-					top: 50%;
-					left: 0;
-					width: 1px;
-					height: 1px;
-					margin-top: -1px;
-					background: #045972;
-				}
 			}
 		}
 	}
@@ -1445,7 +1424,11 @@ input:hover + label .fa, {
 @media screen and (max-width: 1200px) {
 	.navbar-toggle { display: block; }
 
+	.header { z-index: inherit; }
+
 	.navbar { border-top: 1px solid #ccc; }
+
+	.f-navbar { display: none; }
 
 	.main-menu {
 		.container { 
@@ -1455,9 +1438,16 @@ input:hover + label .fa, {
 		.navbar-nav.nav {
 			display: block;
 			text-align: left;
-			li { 
+			.nav-item { 
 				display: block; 
 				float: none;
+				i { display: none; }
+				&.active a { 
+					color: #fff;
+					background-color: #1e597d;
+				}
+				input[type="checkbox"] + .dropdown-menu { display: none; }
+				input[type="checkbox"]:checked + .dropdown-menu { display: block; }
 			}
 			a { 
 				float: none;
@@ -1466,9 +1456,12 @@ input:hover + label .fa, {
 				font-size: 100%;
 				text-transform: inherit;
 				border-bottom: 1px solid #e2e2e2;
+				&:before { display: none; }
 			}
+			.caret { display: none; }
+			.drop-icon { display: block; }
 			.dropdown-menu {
-				position: static;
+				position: relative;
 				float: none;
 				background: transparent;
 				padding: 0;

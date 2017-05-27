@@ -1,15 +1,13 @@
    <footer class="footer">
       <div class="container">
          <nav class="f-navbar navbar">
-            <button type="button" class="navbar-toggle collapsed toggle-menu menu-left push-body" data-toggle="collapse" data-target="#f-navbar" aria-expanded="false">
-               <div class="icon"></div>
-            </button>
-            <div class="main-menu collapse navbar-collapse cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="f-navbar">
+            <div class="main-menu collapse navbar-collapse" id="f-navbar">
                <ul class="nav navbar-nav">
-                  <li class="nav-item"><a href="/">Главная</a></li>
-                  <li class="nav-item"><a href="services-inner.php">Продукция</a></li>
-                  <li class="nav-item" class="dropdown">
-                     <a href="inner.php" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Услуги<span class="caret"></a>
+                  <li class="nav-item"><a href="/">Главная</a><i></i></li>
+                  <li class="nav-item"><a href="services-inner.php">Продукция</a><i></i></li>
+                  <li class="nav-item dropdown">
+                     <a href="services.php" aria-haspopup="true" aria-expanded="false">Услуги<span class="caret"></span><label class="drop-icon" for="sm0">▾</label></a>
+                     <input type="checkbox" name="sm0" id="sm0">
                      <ul class="dropdown-menu">
                         <li class="nav-item"><a href="service-inner.php">Преимущества</a></li>
                         <li class="nav-item"><a href="service-inner.php">Услуга 2</a></li>
@@ -17,12 +15,12 @@
                         <li class="nav-item"><a href="service-inner.php">Услуга 4</a></li>
                      </ul>
                   </li>
-                  <li class="nav-item"><a href="inner.php">Доставка</a></li>
-                  <li class="nav-item"><a href="inner.php">Документы</a></li>
-                  <li class="nav-item"><a href="inner.php">Партнеры</a></li>
-                  <li class="nav-item"><a href="inner.php">Новости</a></li>
-                  <li class="nav-item"><a href="inner.php">Контакты</a></li>
-                  <li class="nav-item"><a href="inner.php">Отзывы</a></li>
+                  <li class="nav-item"><a href="inner.php">Доставка</a><i></i></li>
+                  <li class="nav-item"><a href="inner.php">Документы</a><i></i></li>
+                  <li class="nav-item"><a href="inner.php">Партнеры</a><i></i></li>
+                  <li class="nav-item"><a href="inner.php">Новости</a><i></i></li>
+                  <li class="nav-item"><a href="inner.php">Контакты</a><i></i></li>
+                  <li class="nav-item"><a href="inner.php">Отзывы</a><i></i></li>
                </ul>
             </div>
          </nav>
